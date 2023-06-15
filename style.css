@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+
+body{
+    margin:0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,100px 500px);
+    grid-template-areas:"header header header header"
+    "sidebar main main."
+    "footer footer footer footer"
+    ;
+}
+
+nav{
+    grid-area: header;
+}
+
+.cabecario{
+    width: 100%;
+    height:50px;  
+    display: flex;
+    background-size: cover;
+    justify-content: space-between;
+
+}
+
+#box1{
+    width:250px;
+    background: url(logo_youtube.png);
+    background-size: cover;
+    overflow: auto;
+}
+
+#box2{
+    width:450px;
+    background: url(menu_centro.png);
+    background-size: cover;
+}
+
+
+#box3{
+    width:150px;
+    background: url(menu_direito.png);
+    background-size: cover;
+}
+
+/*---------------------------------------------------------*/
+
+
+
+
+aside{
+    background-color: rgb(255, 255, 255);
+    grid-area: sidebar;
+}
+
+.menu{
+    width: 100%;
+    height:100%;  
+    display: flex;
+    background-size: cover; 
+}
+
+#menu-tube{
+    width:150px;
+    background: url(barra_lateral.png);
+    background-size: cover;
+}
+
+
+.container{
+    display: grid;
+    grid-area: main ;
+    row-gap: 10%;
+    width: 900px;
+    justify-content: space-around;
+    grid-template:repeat(3, 160px)/repeat(3, 200px);
+}
+
+.celula{
+    display: flex;
+}
+
+.item-01{
+    display: flex;
+}
+
+.item-01 img{
+    width:150px;
+    background-size: cover;
+}
+
+.item-02{
+   
+    width:150px;
+    background: url(lista2.png);
+    background-size: cover;
+}
+.item-03{
+    
+    width:150px;
+    background: url(lista3.png);
+    background-size: cover;
+}
+.item-04{
+    
+    width:150px;
+    background: url(lista3.png);
+    background-size: cover;
+}
+.item-05{
+    
+    width:150px;
+    background: url(lista2.png);
+    background-size: cover;
+}
+.item-06{
+  
+    width:150px;
+    background: url(lista1.png);
+    background-size: cover;
+}
+.item-07{
+    
+    width:150px;
+    background: url(lista1.png);
+    background-size: cover;
+}
+.item-08{
+   
+    width:150px;
+    background: url(lista2.png);
+    background-size: cover;
+}
+.item-09{
+    
+    width:150px;
+    background: url(lista3.png);
+    background-size: cover;
+}
+
+
